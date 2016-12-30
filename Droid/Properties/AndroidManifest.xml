@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.secondtestmultiapp">
-	<fragment xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" class="com.google.android.gms.maps.MapFragment" />
-	<uses-sdk android:minSdkVersion="15" />
+	<application android:label="SecondTestMultiApp">
+		<!-- Google Maps API Key -->
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyD7uKEJ7ZKHMttxH6i1FvdecTB5cmbfC78" />
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+	</application>
+
+	<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android" android-->:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" class="com.google.android.gms.maps.MapFragment" />
+	<uses-sdk android:minSdkVersion="16" />
 	<!-- Google Maps for Android v2 requires OpenGL ES v2. -->
 	<uses-feature android:glEsVersion="0x00020000" android:required="true" />
 	<!-- Permission to access Internet through app. -->
@@ -18,9 +24,5 @@
 	<!-- Allow Google Maps to use the My Location provider. -->
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-	<application android:label="SecondTestMultiApp">
-		<!-- Google Maps API Key -->
-		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyACVFGC3DaKvZwsyqI-vVYB5bNZArC3yEk" />
-		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-	</application>
+
 </manifest>
